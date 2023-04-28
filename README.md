@@ -44,6 +44,7 @@ Fullstack developer: includes both front end and Backend developer.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](comming soon...)
+- [Live Presentation Link] (https://www.loom.com/share/aaedfa07cc434d15b927bc67e7984218)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
