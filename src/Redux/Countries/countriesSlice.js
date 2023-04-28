@@ -13,8 +13,8 @@ export const fetchAllCountries = createAsyncThunk(
 
 const initialState = {
   countries: [],
-  status: 'idle',
-  error: null,
+  status: false,
+  error: false,
 };
 
 export const countriesSlice = createSlice({
@@ -24,14 +24,14 @@ export const countriesSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchAllCountries.pending, (state) => {
-        state.status = 'loading';
+        state.status = true;
       })
       .addCase(fetchAllCountries.fulfilled, (state, action) => {
         const { rawData } = action.payload;
-        return { ...state, isLoading: false, countries: rawData };
+        return { ...state, status: false, countries: rawData };
       })
       .addCase(fetchAllCountries.rejected, (state, action) => {
-        state.status = 'failed';
+        state.status = false;
         state.error = action.error.message;
       });
   },
