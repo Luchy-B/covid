@@ -48,7 +48,7 @@ Fullstack developer: includes both front end and Backend developer.
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
-https://github.com/Luchy-B/BookStore
+https://github.com/Luchy-B/covid
 
 ### Setup
 
@@ -99,9 +99,9 @@ npm run test
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add CSS Styling**
-- [ ] **Add interactivity**
-- [ ] **Add page navigation**
+- [ ] **Add search**
+- [ ] **Add details page**
+- [ ] **Add styling**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
