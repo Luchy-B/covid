@@ -11,14 +11,13 @@
   background-blend-mode: darken;
   padding: 50px;
   color: rgba(73, 30, 0, 0.6);
-
-  /* filter: brightness(0.9); */
 }
 
 h1 {
   font-size: 35px;
   color: white;
   border: none;
+  padding: 0px 0px 0px 50px;
 }
 
 .countryList {

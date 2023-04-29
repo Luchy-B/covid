@@ -1,5 +1,5 @@
 .detailsContainer {
-  padding: 20px;
+  padding: 30px;
 }
 
 .countryName {
@@ -15,6 +15,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   text-align: center;
+  margin: 30px;
 }
 
 .detailsData {
@@ -30,5 +31,9 @@
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+  }
+
+  h1 {
+    font-size: 25px;
   }
 }
