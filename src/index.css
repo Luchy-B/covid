@@ -14,10 +14,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(7, 7, 89);
-  color: rgb(29, 184, 215);
+  background-color: rgba(128, 0, 53, 0.982);
+  color: white;
   font-weight: bold;
-  padding: 40px;
+  width: 100%;
 }
 
 code {
@@ -29,3 +29,4 @@ code {
     'Courier New',
     monospace;
 }
+

@@ -31,10 +31,28 @@ export default function Countries() {
   };
 
   return (
-    <div>
+    <div className="homepage" data-testid="home-container">
       {selectedCountries ? (
         <div>
-          <button type="button" onClick={handleResetSelection} aria-label="Back" className="backArrow"><FontAwesomeIcon icon={faArrowLeft} /></button>
+          <nav>
+            <button type="button" onClick={handleResetSelection} aria-label="Back" className="backArrow"><FontAwesomeIcon icon={faArrowLeft} /></button>
+            <h3>COVID-19 REPORT</h3>
+            <form className="searchContainer">
+              <input
+                value={query}
+                type="text"
+                placeholder="Search Country"
+                onChange={(e) => setQuery(e.target.value)}
+              />
+              <i className="search-icon">
+                <FontAwesomeIcon icon={faSearch} />
+              </i>
+            </form>
+          </nav>
+          <div>
+            <div className="containerBck" />
+            <h1>2020 REPORT TILL DATE</h1>
+          </div>
           <Details countriesId={selectedCountries} />
         </div>
       ) : (
@@ -52,25 +70,31 @@ export default function Countries() {
               </i>
             </form>
           </nav>
-
-          <h1>2020 REPORT TILL DATE</h1>
+          <div className="folder">
+            <div className="containerBck">
+              <p>World</p>
+            </div>
+            <h1>2020 REPORT TILL DATE</h1>
+          </div>
 
           <div className="countryList">
             {countries
               .filter((country) => country.Country_Region.toLowerCase().includes(query))
               .map((country) => (
                 <div className="countryItem" key={country.Combined_Key}>
-                  <p>{country.Combined_Key}</p>
+                  <span>
+                    <p>{country.Combined_Key}</p>
+                    <button
+                      type="button"
+                      key={uuidv4()}
+                      onClick={() => handleSelectCountry(country.Combined_Key)}
+                    >
+                      <i className="rightArrow">
+                        <FontAwesomeIcon icon={faArrowRight} />
+                      </i>
+                    </button>
+                  </span>
                   <p>{country.Confirmed}</p>
-                  <button
-                    type="button"
-                    key={uuidv4()}
-                    onClick={() => handleSelectCountry(country.Combined_Key)}
-                  >
-                    <i className="rightArrow">
-                      <FontAwesomeIcon icon={faArrowRight} />
-                    </i>
-                  </button>
                 </div>
               ))}
           </div>

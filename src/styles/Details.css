@@ -1,17 +1,35 @@
+.detailsContainer {
+  padding: 20px;
+}
+
 .countryName {
-  font-size: 32px;
+  font-size: 18px;
   padding: 20px 0 20px 0;
+  background-color: rgba(180, 75, 112, 0.638);
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .detailsContents {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
   text-align: center;
 }
 
 .detailsData {
-  background-color: rgb(7, 7, 89);
-  border: 2px solid aqua;
+  background-color: rgba(180, 75, 112, 0.638);
+  border: none;
   padding: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 375px) {
+  .detailsContents {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }
