@@ -1,0 +1,113 @@
+.homepage {
+  width: 100%;
+}
+
+.containerBck {
+  width: 100%;
+  margin: 0;
+  background-image: url(../../images/world.jpg);
+  opacity: 0.5;
+  background-color: rgba(73, 30, 0, 0.6);
+  background-blend-mode: darken;
+  padding: 50px;
+  color: rgba(73, 30, 0, 0.6);
+}
+
+h1 {
+  font-size: 35px;
+  color: white;
+  border: none;
+  padding: 0 0 0 50px;
+}
+
+.countryList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 10px 10px;
+  padding-top: 20px;
+}
+
+.countryItem {
+  justify-content: center;
+  gap: 5px;
+  background-color: rgba(180, 75, 112, 0.638);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.countryItem span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.countryItem p {
+  padding-left: 8px;
+}
+
+.countryItem button {
+  color: white;
+  background-color: rgba(180, 75, 112, 0.055);
+  border: none;
+}
+
+.rightArrow {
+  cursor: pointer;
+}
+
+.backArrow {
+  background-color: rgba(180, 75, 112, 0.638);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.countryInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 30px 30px;
+}
+
+.countryInfoItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(29, 184, 215);
+  color: rgb(7, 7, 89);
+}
+
+/* Header Styling */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.searchContainer {
+  margin: 15px;
+}
+
+.searchContainer input {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  margin-right: 3px;
+  background-color: rgba(180, 75, 112, 0.89);
+  opacity: 0.9;
+}
+
+input::placeholder {
+  color: white;
+}
+
+/* Footer Styling */
+
+footer {
+  text-align: center;
+}
