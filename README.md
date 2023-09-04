@@ -43,7 +43,7 @@ Fullstack developer: includes both front end and Backend developer.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://644c0f92b8e2ca03c7137404--astonishing-figolla-eb6a4d.netlify.app/)
+- [Live Demo Link](https://644c0f92b8e2ca03c7137404--astonishing-figolla-eb6a4d.netlify.app)
 - [Live Presentation Link] (https://www.loom.com/share/aaedfa07cc434d15b927bc67e7984218)
 
 ## 💻 Getting Started <a name="getting-started"></a>
